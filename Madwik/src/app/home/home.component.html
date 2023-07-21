@@ -1,1 +1,46 @@
-<p>home works!</p>
+<div class="container py-5 mb-5">
+  <div class="row mt-5 pt-5">
+    <h1 class="text-center">Welcome to Madwik</h1>
+  </div>
+  
+  <h4 class="text-center">Please Choose the Option for Continue Shopping!</h4>
+
+  <div class="row d-flex justify-content-center mt-5">
+    <div class="col-6 d-flex align-items-center">
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Select Option</option>
+      <option value="1">Hightech Medicos</option>
+      <option value="2">Medwik</option>
+      <option value="3">Sadanand</option>
+    </select>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center mt-3">
+    <div >
+      <button mat-flat-button color="accent" type="submit">
+        Continue
+        <mat-icon>trending_flat</mat-icon>
+        </button>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+<!-- <h4>mat-select</h4>
+<mat-form-field>
+  <mat-label>Choose one</mat-label>
+  <mat-select [formControl]="selected" [errorStateMatcher]="matcher">
+    <mat-option>Clear</mat-option>
+    <mat-option value="valid">Valid option</mat-option>
+    <mat-option value="invalid">Invalid option</mat-option>
+  </mat-select>
+  <mat-hint>Errors appear instantly!</mat-hint>
+  <mat-error *ngIf="selected.hasError('required')">You must make a selection</mat-error>
+  <mat-error *ngIf="selected.hasError('pattern') && !selected.hasError('required')">
+    Your selection is invalid
+  </mat-error>
+</mat-form-field> -->

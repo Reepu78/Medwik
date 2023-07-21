@@ -1,0 +1,38 @@
+<div class="container ps-3 pe-3 mt-5">
+    <div class="row">
+        <div class="col-12 heading">
+            <h1 class="text-center">Send Reciept</h1>
+        </div>
+
+        <div class="col-12 form-filed">
+            <form #recieptForm="ngForm" (ngSubmit)="onSendReciept(recieptForm.value)">
+                
+                <div class="form-group inpt">
+                  <label for="name">Patient Name</label>
+                  <input type="text" class="form-control" name="name" id="name" aria-describedby="emailHelp" placeholder="Patient Name" ngModel>
+                </div>
+                
+                <div class="form-group inpt">
+                    <label for="bed">Bed Number</label>
+                    <input type="text" class="form-control" name="bedNumber" id="bed" placeholder="Bed Number" ngModel>
+                </div>
+
+                <div class="form-group inpt">
+                    <mat-checkbox class="example-margin">Have you Received the payment?</mat-checkbox>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <div class="can">
+                        <button mat-flat-button color="white" type="submit">Cancel</button>
+                    </div>
+                    <div class="reg ms-3">
+                        <button mat-flat-button color="accent" type="submit">Send Reciept</button>
+                    </div>
+                </div>
+                
+            </form>
+
+        </div>
+
+    </div>
+</div>

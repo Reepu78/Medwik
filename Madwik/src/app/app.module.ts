@@ -11,6 +11,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterUserComponent } from './register-user/register-user.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RecieptComponent } from './reciept/reciept.component';
+import { DepositComponent } from './deposit/deposit.component';
+import { PrescriptionComponent } from './prescription/prescription.component';
+import { DeliveryComponent } from './delivery/delivery.component';
+import { SummaryComponent } from './summary/summary.component';
+
+
 
 
 @NgModule({
@@ -20,7 +29,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SidenavComponent,
     DashboardComponent,
     HomeComponent,
-    RegisterUserComponent
+    RegisterUserComponent,
+    RecieptComponent,
+    DepositComponent,
+    PrescriptionComponent,
+    DeliveryComponent,
+    SummaryComponent,
+    
 
   ],
   imports: [
@@ -29,6 +44,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserAnimationsModule,
     MaterialModule,
     NgbModule,
+    FormsModule,
+    HttpClientModule
     
     
   ],
